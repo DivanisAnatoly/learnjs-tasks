@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Calculator(){
+            this['openand 1'] = 0;
+            this['openand 2'] = 0;
+
+            this.read = function() {
+                this['openand 1'] = +prompt('openand 1', 0);
+                this['openand 2'] = +prompt('openand 1', 0);
+            }
+
+            this.sum = function() {
+                return this['openand 1'] + this['openand 2'];
+            }
+
+            this.mul = function() {
+                return this['openand 1'] * this['openand 2'];
+            }
+        };
+
+        let calculator = new Calculator();
+
+        calculator.read();
+        alert("Sum=" + calculator.sum());
+        alert("Mul=" + calculator.mul());
+    </script>
+</body>
+
+</html>
